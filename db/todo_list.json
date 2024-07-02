@@ -1,0 +1,42 @@
+[
+    {
+        "nome": "Fare la spesa",
+        "completato": false
+    },
+    {
+        "nome": "Lavare i piatti",
+        "completato": true
+    },
+    {
+        "nome": "Portare fuori il cane",
+        "completato": false
+    },
+    {
+        "nome": "Fare esercizio fisico",
+        "completato": true
+    },
+    {
+        "nome": "Leggere un libro",
+        "completato": false
+    },
+    {
+        "nome": "Scrivere un'email di lavoro",
+        "completato": true
+    },
+    {
+        "nome": "Pulire la casa",
+        "completato": false
+    },
+    {
+        "nome": "Pagare le bollette",
+        "completato": true
+    },
+    {
+        "nome": "Preparare la cena",
+        "completato": false
+    },
+    {
+        "nome": "Studiare per l'esame",
+        "completato": true
+    }
+]
