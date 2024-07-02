@@ -20,6 +20,19 @@ Html, CSS, VueJS (importato tramite CDN), axios, PHP-->
 </head>
     <body>
         <main id="app">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-6">
+                        <h1>Todo List</h1>
+                        <ul class="list-group">
+                            <li href="#" class="list-group-item list-group-item-action"
+                            v-for ="todoElement in todoList">
+                                {{todoElement.nome}}
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
 
         </main>
