@@ -24,12 +24,18 @@ Html, CSS, VueJS (importato tramite CDN), axios, PHP-->
                 <div class="row justify-content-center">
                     <div class="col-6">
                         <h1>Todo List</h1>
-                        <ul class="list-group">
-                            <li href="#" class="list-group-item list-group-item-action"
-                            v-for ="todoElement in todoList">
-                                {{todoElement.nome}}
-                            </li>
-                        </ul>
+                        <section class="todo-list">
+                            <ul class="list-group">
+                                <li class="list-group-item list-group-item-action" v-for= "todoElement in todoList"
+                                :class=" todoElement.completato ? 'text-decoration-line-through' : '' ">
+                                    <p>{{todoElement.nome}}</p>
+                                </li>
+                            </ul>
+                        </section>
+                        <section class="user-input">
+                            <input type="text" class="input-group" @keyup.enter="addTask(newTaskName)" v-model="newTaskName">
+                        </section>
+                        
                     </div>
                 </div>
             </div>

@@ -5,6 +5,7 @@ createApp({
         return {
             todoList:[],
             apiUrl:'./api/get_all_list.php',
+            newTaskName:'',
         }
     },
     methods:{
@@ -21,6 +22,14 @@ createApp({
                 // always executed
             });  
             
+        },
+        addTask(taskToAdd){
+            newTodoObj={
+                nome: taskToAdd,
+                completato: false,
+            }
+            this.todoList.push(newTodoObj);
+            this.newTaskName="";
         }
     },
     created(){
